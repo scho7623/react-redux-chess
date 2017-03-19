@@ -1,0 +1,27 @@
+div.square {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+  &.black {
+    background-color: #000;
+    color: #fff;
+  }
+
+  &.over {
+    background-color: #0f0;
+  }
+
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  > span {
+    cursor: pointer;
+    font-size: 48px;
+    vertical-align: middle;
+  }
+}
